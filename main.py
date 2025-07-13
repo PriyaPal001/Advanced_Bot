@@ -6,16 +6,16 @@ import pyttsx3
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 
-# Setup log folder and file
+
 log_folder = "conversation_logs"
 os.makedirs(log_folder, exist_ok=True)
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 log_file_path = os.path.join(log_folder, f"conversation_{timestamp}.txt")
 
-# Setup voice engine
+
 engine = pyttsx3.init()
 
-# LangChain setup
+
 template = """
 Answer is below:
 
@@ -29,7 +29,7 @@ model = OllamaLLM(model="llama3")
 prompt = ChatPromptTemplate.from_template(template)
 chain = prompt | model
 
-# Voice input function
+
 def get_voice_input():
     recognizer = sr.Recognizer()
     with sr.Microphone() as source:
@@ -46,20 +46,21 @@ def get_voice_input():
         print(" Could not request results; check your internet.")
         return ""
 
-# Chat handler
+
 def handle_conversation():
     context = ""
     print("You can type or enter 'talk' to speak. Type 'exit' to end.")
 
     while True:
+        input_mode = "text"
         user_input = input("You: ")
         if user_input.lower() == 'exit':
-            
             break
         elif user_input.lower() == 'talk':
             user_input = get_voice_input()
+            input_mode = "voice"
             if not user_input:
-                continue  # Skip empty audio
+                continue  
 
         try:
             print("....Analysing....")
@@ -69,11 +70,11 @@ def handle_conversation():
             })
             print("Bot:", result)
 
-            # Speak the answer
-            engine.say(result)
-            engine.runAndWait()
+            # if input_mode == "voice":
+            #     engine.say(result)
+            #     engine.runAndWait()
 
-            # Save
+            
             context += f"\nUser: {user_input}\nBot: {result}"
             with open(log_file_path, "a", encoding="utf-8") as file:
                 file.write(f"User: {user_input}\nBot: {result}\n\n")
