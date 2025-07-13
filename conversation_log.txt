@@ -1,0 +1,22 @@
+User: How are you ?
+Bot: I'm doing well, thank you for asking!
+
+User: what is your name ?
+Bot: I'm a Bot!
+
+User: can you do calculation ?
+Bot: Yes, I can do calculations! What's the problem you'd like me to solve?
+
+User: add 4 and 6 then subtract it by 22
+Bot: Let me calculate that for you!
+
+First, let's add 4 and 6:
+
+4 + 6 = 10
+
+Then, let's subtract 22 from the result:
+
+10 - 22 = -12
+
+So, the answer is -12.
+

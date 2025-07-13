@@ -1,0 +1,31 @@
+User: Hello
+Bot: Hi! How are you today?
+
+User: can you hear me
+Bot: Yes, I can hear you.
+
+User: name some red color fruits
+Bot: Some red color fruits include:
+
+* Apples
+* Strawberries
+* Cherries
+* Cranberries
+* Raspberries
+
+User: write a mail to my manager for leave from 4th of June to 6 of August
+Bot: Subject: Request for Leave from 4th June to 6th August
+
+Dear [Manager's Name],
+
+I am writing to request some time off from work. I would like to take a leave from 4th of June to 6th August. This will give me a much-needed break and allow me to recharge before returning to work.
+
+I have reviewed our team's workload and ensured that all my tasks are up-to-date, so my absence should not impact the project's progress. I will make sure to complete all my pending work and ensure a smooth transition of tasks before my leave.
+
+If there is any issue or concern regarding my request, please let me know as soon as possible so we can discuss alternative arrangements. I appreciate your understanding and approval for my leave.
+
+Thank you for considering my request.
+
+Best regards,
+[Your Name]
+

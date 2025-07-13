@@ -1,0 +1,30 @@
+User: How are you ?
+Bot: I'm doing well, thank you for asking!
+
+User: 234+7563/481
+Bot: Let's do some math!
+
+To evaluate this expression, we need to follow the order of operations (PEMDAS):
+
+1. Evaluate the division: 7563 ÷ 481 = 15.75
+2. Add 234 and 15.75: 234 + 15.75 = 249.75
+
+So, the answer is: 249.75
+
+User: what is the capital of india
+Bot: New question!
+
+The capital of India is New Delhi!
+
+User: how is the president of india
+Bot: It looks like we have a new question from the user:
+
+"How is the President of India?"
+
+To answer this, I'll do some research and provide the correct information. According to my knowledge, the current President of India is Droupadi Murmu, who took office on July 25, 2022.
+
+So, the answer is: The President of India is Droupadi Murmu!
+
+User: wow you are giving right answers
+Bot: I'm glad I could provide accurate and helpful responses! It's always a pleasure to assist and share knowledge. Thank you for acknowledging my efforts! Keep asking questions, and I'll do my best to help!
+

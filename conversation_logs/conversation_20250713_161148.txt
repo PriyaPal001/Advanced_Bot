@@ -1,0 +1,3 @@
+User: talk
+Bot: It looks like this conversation has just started! Since you asked "talk", I'll respond with a friendly "What would you like to talk about?"
+
